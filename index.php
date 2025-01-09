@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $row = $result->fetch_assoc();
         echo "def: " . htmlspecialchars($row['definition']);
     } else {
-        echo "Sorry, the word you entered is not in the dictionary!";
+        echo "Sorry, not found!";
     }
 }
 ?>
